@@ -5,8 +5,7 @@ Welcome to the CNC Project! This project utilizes a Raspberry Pi, Arduino, and 6
 - Arduino board
 - 65C02 microprocessor (optional for extra error checking)
 - Motors and a knife for the cutting (optional when just doing error checking)
-- OpenCV for the raspberry pi
-- Arduino IDE for code development (or visual studio code and arduino CLI tools)
+- Arduino IDE for code development (or your code editor of choice combined with the arduino CLI tools)
 ## Installation
 1. Clone the repository to your Raspberry Pi:
 
@@ -33,10 +32,24 @@ Welcome to the CNC Project! This project utilizes a Raspberry Pi, Arduino, and 6
 ## Example Code
 ### Raspi main script
 ```python
-# import the library to convert the image into a usable format that should work with the arduino and 65c02 (65C02 optional).
 import CTC
-# start the CTC process
-CTC.convert()
+import PixelA
+import STA
+def start(ardCOM):
+    # start the CTC process
+    print("Converting Image to Grayscale")
+    
+    # Convert to grayscale
+    CTC.convert("image/example.png", "output/exampleout.png")
+    
+    # declare the array of light pixels
+    print("Finding all light pixels in output image")
+    light_pixel = PixelA.AImage("output/exampleout.png")
+    print("Sending Data to Arduino")
+    
+    # send data over serial to Arduino
+    STA.send_to_serial(light_pixel, ardCOM)
+start('COM6')
 ```
 ## Contribution
 Feel free to contribute to this project by submitting issues or pull requests.
