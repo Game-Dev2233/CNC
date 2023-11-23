@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+# Defined convert
 def convert(input_path, output_path):
     # Read the image
     img = cv2.imread(input_path)
