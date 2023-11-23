@@ -3,7 +3,9 @@
 import CTC
 import PixelA
 import STA
+import json
 def start(ardCOM):
+    debug = 1
     # start the CTC process
     print("Converting Image to Grayscale")
     # Convert to grayscale
@@ -14,5 +16,7 @@ def start(ardCOM):
     print("Sending Data to Arduino")
     # send data to the arduino from COM6
     STA.send_to_serial(light_pixel, ardCOM)
-    print(light_pixel)
+    # print debug information if debug = 1
+    if debug=="1":
+        print(light_pixel)
 start('COM6')
