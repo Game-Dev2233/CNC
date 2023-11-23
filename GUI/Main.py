@@ -51,4 +51,6 @@ def start(ardCOM):
     
     # send data over serial to Arduino
     send_to_serial(light_pixel, ardCOM)
+    # Confirm sending is done
+    print("Data has been sent to arduino")
 start('COM6')
