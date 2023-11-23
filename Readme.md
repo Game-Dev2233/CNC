@@ -11,9 +11,9 @@ Welcome to the CNC Project! This project utilizes a Raspberry Pi, Arduino, and 6
 1. Clone the repository to your Raspberry Pi:
 
    ```bash
-   git clone https://github.com/your-username/CNC-Project.git
+   git clone https://github.com/Game-Dev2233/CNC.git
    ```
-2. Upload the Arduino code (`cnc_error_detection.ino`) to your Arduino board using the Arduino IDE (or CLI).
+2. Upload the Arduino code (`CNC.ino`) to your Arduino board using the Arduino IDE (or CLI).
 3. Install required Python libraries on your Raspberry Pi:
    ```bash
    pip install -r requirements.txt
