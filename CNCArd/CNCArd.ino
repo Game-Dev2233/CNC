@@ -1,4 +1,4 @@
-#include <ardunio.h>
+#include <Arduino.h>
 const int ledPin = 12;  // Define the digital output pin
 
 void setup() {

@@ -24,32 +24,7 @@ Welcome to the CNC Project! This project utilizes a Raspberry Pi, Arduino, and 6
 2. Run the main Python script on your Raspberry Pi:
 
    ```bash
-   python cnc_main.py
+   python cnc_main.py [COM+PORT NUMBER] [IMAGE LOCATION]
    ```
-
-3. Follow the on-screen instructions to initiate the CNC process.
-
-## Example Code
-### Raspi main script
-```python
-import CTC
-import PixelA
-import STA
-def start(ardCOM):
-    # start the CTC process
-    print("Converting Image to Grayscale")
-    
-    # Convert to grayscale
-    CTC.convert("image/example.png", "output/exampleout.png")
-    
-    # declare the array of light pixels
-    print("Finding all light pixels in output image")
-    light_pixel = PixelA.AImage("output/exampleout.png")
-    print("Sending Data to Arduino")
-    
-    # send data over serial to Arduino
-    STA.send_to_serial(light_pixel, ardCOM)
-start('COM6')
-```
 ## Contribution
 Feel free to contribute to this project by submitting issues or pull requests.
