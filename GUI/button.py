@@ -5,8 +5,11 @@ import threading
 root = tk.Tk()
 root.geometry("500x150")
 root.title("CNC GUI")
+stop_thread = False
 
 def estop():
+    global stop_thread
+    stop_thread = True
     exit()
 
 def on_button_click():
