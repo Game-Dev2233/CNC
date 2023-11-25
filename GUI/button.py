@@ -15,7 +15,7 @@ def estop():
 def on_button_click():
     try:
         # run Main.py in a separate thread
-        threading.Thread(target=subprocess.run, args=(["Python", "Main.py"],)).start()
+        threading.Thread(target=subprocess.run, args=(["Python3", "Main.py"],)).start()
     except Exception as e:
         label.config(text=f"Error: {str(e)}")
 
@@ -26,7 +26,7 @@ def setup():
 
     # Warning label
     global label  # Make label global so it can be accessed in the exception block
-    label = tk.Label(root, text="Warning do not touch the CNC machine insides while running the CNC machine")
+    label = tk.Label(root, text="Warning do not touch the CNC machine insides while running the CNC machine\n it will kill you")
     label.pack(pady=10)
 
     # Emergency Shutdown button
