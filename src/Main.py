@@ -2,7 +2,6 @@ import CTC
 import PixelA
 import STA
 import sys
-import usage
 switch1 = sys.argv[1]
 switch2 = sys.argv[2]
 def start(ardCOM, ImageInput):
