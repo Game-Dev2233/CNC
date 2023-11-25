@@ -3,7 +3,7 @@ import tkinter as tk
 import threading
 
 root = tk.Tk()
-root.geometry("500x150")
+root.geometry("550x160")
 root.title("CNC GUI")
 stop_thread = False
 
@@ -33,7 +33,7 @@ def setup():
     button_estop = tk.Button(root, text="Emergency Stop", command=estop)
     button_estop.pack(pady=10)
 
-def es():
+def ends():
     root.protocol("WM_DELETE_WINDOW", root.destroy)
     root.mainloop()
 
