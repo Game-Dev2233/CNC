@@ -7,7 +7,7 @@ Welcome to the CNC Project! This project utilizes a Raspberry Pi, Arduino, and 6
 - Motors and a knife for the cutting (optional when just doing error checking)
 - Arduino IDE for code development (or your code editor of choice combined with the arduino CLI tools)
 ## Installation
-1. Clone the repository to your Raspberry Pi:
+1. Clone the repository to your Raspberry Pi/Computer:
 
    ```bash
    git clone https://github.com/Game-Dev2233/CNC.git
