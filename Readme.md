@@ -19,7 +19,7 @@ Welcome to the CNC Project! This project utilizes a Raspberry Pi, Arduino, and 6
    ```
 ## Usage
 
-1. Connect the Raspberry Pi, Arduino, 65C02, and CNC hardware according to your setup.
+1. Connect the Raspberry Pi (Or computer), Arduino, 65C02 (Optional), and CNC hardware.
 
 2. Run the main Python script on your Raspberry Pi:
 
