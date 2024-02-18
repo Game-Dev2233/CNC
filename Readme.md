@@ -23,7 +23,7 @@ Welcome to the CNC Project! This project utilizes a Raspberry Pi, Arduino, and 6
 2. Run the main Python script on your Raspberry Pi:
 
    ```bash
-   python cnc_main.py [COM+PORT NUMBER] [IMAGE LOCATION]
+   python src/main.py [COM+PORT NUMBER] [IMAGE LOCATION]
    ```
 ## Contribution
 Feel free to contribute to this project by submitting issues or pull requests.
